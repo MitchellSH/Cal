@@ -35,18 +35,19 @@ Printing Months
 ===
 The initial milestone of this assignment is to implement a ruby program, cal.rb that takes two command-line arguments:
 
-> ruby cal.rb 12 2012
+> ruby cal.rb 12 2012 <
 
 and outputs the calendar for that month (12) and year (2012):
 
-   December 2012
+>   December 2012
 Su Mo Tu We Th Fr Sa
                    1
  2  3  4  5  6  7  8
  9 10 11 12 13 14 15
 16 17 18 19 20 21 22
 23 24 25 26 27 28 29
-30 31
+30 31 <
+
 This is functionally equivalent to calling Unix cal with those arguments (cal 12 2012) and the output of your program should match that of Unix cal.
 
 Printing Years
@@ -58,7 +59,7 @@ After completing printing of a single month, you will then expand that same prog
 
 and output the calendar for that year (2012):
 
-2012
+> 2012
 
 January               February               March
 Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
@@ -90,4 +91,4 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 7  8  9 10 11 12 13   4  5  6  7  8  9 10   2  3  4  5  6  7  8
 14 15 16 17 18 19 20  11 12 13 14 15 16 17   9 10 11 12 13 14 15
 21 22 23 24 25 26 27  18 19 20 21 22 23 24  16 17 18 19 20 21 22
-28 29 30 31           25 26 27 28 29 30     23 24 25 26 27 28 29
+28 29 30 31           25 26 27 28 29 30     23 24 25 26 27 28 29 <
