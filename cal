@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require_relative "lib/zeller_alg.rb"
+require_relative "lib/month.rb"
+require_relative "lib/calc.rb"
+
+month = ARGV[0]
+year  = ARGV[1]
+
+month = month.to_s.delete("0").to_i
+year = year.to_i
+
+day_of_month = ZellerAlg.zeller_start_day(month, year)
+days_in_month = Calc.days_in_month(month, year)
+
+if day_of_month == 0
+  day_of_month = 6
+else
+  day_of_month -= 1
+end
+
+puts #spacing
+PrintMonth.print_month(month, year, day_of_month, days_in_month)
+puts #spacing
+puts #spacing
